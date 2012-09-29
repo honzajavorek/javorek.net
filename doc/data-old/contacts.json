@@ -1,0 +1,60 @@
+{
+    "honza":{
+    	"title":"Bc.",
+    	"name":"Honza",
+    	"surname":"Javorek",
+    	"email":"honza@javorek.net",
+    	"phone":"+420732967830",
+    	"skype":"honza.javorek",
+    	"google":{"mail":"jan.javorek@gmail.com","badge":"http://www.google.com/talk/service/badge/Show?tk=z01q6amlqc1658b3o5ldt330s0u9h30729l9tlg0lhirdd1gfjc6v718cgecgrsng4f3c4r26u6l3hp3lffb0slitv1n04u4a9tm1o4vskm931tbogl1v2sc12p1as90hbh0trh74dgs1m82lc592vlggn68sbn2l1teib2h3&amp;w=9&amp;h=9"},
+    	"twitter":"littlemaple",
+    	"ic":"74279858",
+    	"bank":"198512086/0300",
+    	"iban":"CZ03 0300 0000 0001 9851 2086",
+    	"vat":false,
+    	"linkedin":"honzajavorek",
+    	"publications":[
+    	    {
+    			"title":"CSS preprocesory: méně psaní, vyšší efektivita | Zdroják.cz",
+    			"link":"http://zdrojak.root.cz/clanky/css-preprocesory-mene-psani-vyssi-efektivita/",
+    			"lang":"cs"
+    		},
+    	    {
+    			"title":"Jak si zjednodušit práci s PHP projektem pomocí příkazové řádky | Zdroják.cz",
+    			"link":"http://zdrojak.root.cz/clanky/jak-si-zjednodusit-praci-s-php-projektem-pomoci-prikazove-radky/",
+    			"lang":"cs"
+    		},
+    		{
+    			"title":"API k českým turistickým mapám | Zdroják.cz",
+    			"link":"http://zdrojak.root.cz/clanky/api-k-ceskym-turistickym-mapam/",
+    			"lang":"cs"
+    		},
+    		{
+    			"title":"Evidence geografických tras uživatele | Bakalářská práce FIT VUT",
+    			"link":"http://www.slideshare.net/littlemaple/bakalsk-prce-evidence-geografickch-tras-uivatele",
+    			"lang":"cs"
+    		},
+    		{
+    			"title":"blog Javorové lístky",
+    			"link":"http://blog.javorek.net/",
+    			"lang":"cs"
+    		}
+    	]
+    },
+    "michal":{
+    	"title":null,
+    	"name":"Michal",
+    	"surname":"Wiglasz",
+    	"email":"michal@javorek.net",
+    	"phone":"+420605969457",
+    	"skype":"michal.wiglasz",
+    	"google":{"mail":"michal.wiglasz@gmail.com","badge":"http://www.google.com/talk/service/badge/Show?tk=z01q6amlqms9269su598rp74cl1victvrtqjab7dptvs39e6o8locr80iqushhrksej97f24c53vriom3lil2qfjitof5hce9itu5iphcl2a1kvr9j49avof4r758u60nkgg9kvodp4nolonjou95a4aeijrv71sve7e6m4g3&w=9&h=9"},
+    	"twitter":"kacer",
+    	"ic":"87023873",
+    	"bank":"217095522/0300",
+    	"iban":"CZ04 0300 0000 0002 1709 5522",
+    	"vat":false,
+    	"linkedin":"michalwiglasz",
+    	"publications":[]
+    }
+}

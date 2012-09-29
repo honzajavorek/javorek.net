@@ -1,0 +1,20 @@
+{block #content}
+
+<div class="header">
+<div class="wrapper">
+	<h1>{_'ERROR.HEADER'}</h1>
+	<p class="lead">{!_'ERROR.500'}</p>
+</div>
+</div>
+
+<hr>
+
+<div class="section singlecol">
+
+<h2>{_'ERROR.WHY'}</h2>
+<p>{!_'ERROR.500_WHY'}</p>
+
+<h2>{_'ERROR.WHAT_NOW'}</h2>
+<p>{!_'ERROR.500_HOME'|inject:HOME_LINK:$template->presenter->link('Default:')}</p>
+
+</div>

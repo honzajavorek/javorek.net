@@ -1,0 +1,46 @@
+{
+    "webexpo2011":{
+		"title":"WebExpo 2011",
+    	"link":"http://webexpo.cz/praha2011/"
+    },
+    "pyvo":{
+    	"title":"PyVo",
+    	"link":"http://www.pyvo.cz/"
+    },
+    "pv219-2011":{
+    	"title":"Seminář webdesignu MU 2011",
+    	"link":"http://www.fi.muni.cz/~xobsivac/PV219/hoste11.html"
+    },
+	"ppps":{
+		"title":"PředPředPředposlední středa",
+    	"link":"http://www.facebook.com/pppscz"
+    },
+    "gdd2010":{
+		"title":"Google Developer Day 2010",
+    	"link":"http://www.google.com/events/developerday/2010/prague/"
+    },
+	"seznam":{
+		"title":"Den s vývojáři Seznam.cz",
+    	"link":"http://vyvojari.seznam.cz/den-s-vyvojari"
+    },
+    "webexpo2010":{
+		"title":"WebExpo 2010",
+    	"link":"http://webexpo.cz/praha2010/"
+    },
+    "barcampbrno2010":{
+    	"title":"Barcamp Brno 2010",
+    	"link":"http://brno2010.barcamp.cz"
+    },
+    "pv219-2010":{
+    	"title":"Seminář webdesignu MU 2010",
+    	"link":"http://www.fi.muni.cz/~xobsivac/PV219/hoste10.html"
+    },
+    "webexpo2009":{
+    	"title":"WebExpo 2009",
+    	"link":"http://webexpo.cz/praha2009/"
+    },
+    "webexpo2008":{
+    	"title":"WebExpo 2008",
+    	"link":"http://webexpo.cz/praha2008/"
+    }
+}

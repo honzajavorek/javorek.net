@@ -1,0 +1,74 @@
+{block #content}
+
+<div class="header">
+<div class="wrapper">
+	<h1>{_'DEFAULT.TITLE'}</h1>
+	<p class="lead">{!_'DEFAULT.SUBTITLE'}</p>
+</div>
+</div>
+
+<hr>
+
+<div class="section" id="blocks">
+
+<div class="block firstblock">
+<div class="wrapper">
+<h2>{_'DEFAULT.PHP'}</h2>
+<ul>
+	<li>{_'DEFAULT.PHP_BLOCK_LINE_1'}</li>
+	<li>{_'DEFAULT.PHP_BLOCK_LINE_2'|inject:EXPERIENCE_YEARS_PHP:$experienceYearsPhp}</li>
+	<li>{_'DEFAULT.PHP_BLOCK_LINE_3'}</li>
+</ul>
+<p>
+	<strong class="price"><sup>{_'DEFAULT.FROM'} </sup>{_'SERVICES.PRICE'} <small>{_'SERVICES.UNIT'}</small></strong>
+	<a class="more" href="{link Default:contact}">{_'DEFAULT.DETAILS'}</a>
+</p>
+</div>
+</div>
+
+<div class="block secondblock">
+<div class="wrapper">
+<h2>{_'DEFAULT.PYTHON'}</h2>
+<ul>
+	<li>{_'DEFAULT.PYTHON_BLOCK_LINE_1'}</li>
+	<li>{_'DEFAULT.PYTHON_BLOCK_LINE_2'|inject:EXPERIENCE_YEARS_PYTHON:$experienceYearsPython}</li>
+	<li>{_'DEFAULT.PYTHON_BLOCK_LINE_3'}</li>
+</ul>
+<p>
+	<strong class="price"><sup>{_'DEFAULT.FROM'} </sup>{_'SERVICES.PRICE'} <small>{_'SERVICES.UNIT'}</small></strong>
+	<a class="more" href="{link Default:contact}">{_'DEFAULT.DETAILS'}</a>
+</p>
+</div>
+</div>
+
+<div class="block thirdblock">
+<div class="wrapper">
+<h2>{_'DEFAULT.OTHER'}</h2>
+<ul>
+	<li>{_'DEFAULT.OTHER_BLOCK_LINE_1'}</li>
+	<li>{_'DEFAULT.OTHER_BLOCK_LINE_2'}</li>
+	<li>{_'DEFAULT.OTHER_BLOCK_LINE_3'}</li>
+	<li>{_'DEFAULT.OTHER_BLOCK_LINE_4'}</li>
+</ul>
+</div>
+</div>
+
+<div class="cleaner"><hr></div>
+</div>
+
+<div class="clothesline">
+<div class="section column sideleftcol twitter">
+<h2>{_'LAYOUT.TWITTER'}</h2>
+{widget twitter}
+<p><a href="http://twitter.com/javoreknet" class="more">{_'LAYOUT.MORE'}</a></p>
+</div>
+
+<div class="section column mainrightcol">
+<h2>{_'REFERENCES.CLIENTS'}</h2>
+{widget clients}
+
+<h2>{_'REFERENCES.PROJECTS'}</h2>
+{widget contracts}
+
+</div>
+</div>

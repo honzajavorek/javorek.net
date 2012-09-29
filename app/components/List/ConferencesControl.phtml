@@ -1,0 +1,14 @@
+<table class="conferences listtable">
+{foreach $items as $id => $item}
+
+<tr>
+	<th>
+		<a href="{$item['link']}">
+		<img src="{$basePath}/images/conferences/{$id}.png" alt="{$item['title']}" title="{$item['title']}">
+		</a>
+	</th>
+	<td>{$item['title']}</td>
+</tr>
+
+{/foreach}
+</table>

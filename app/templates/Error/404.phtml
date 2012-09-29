@@ -1,0 +1,24 @@
+{block #content}
+
+<div class="header">
+<div class="wrapper">
+	<h1>{_'ERROR.HEADER'}</h1>
+	<p class="lead">{!_'ERROR.404'|inject:URI:$_SERVER['REQUEST_URI']}</p>
+</div>
+</div>
+
+<hr>
+
+<div class="section singlecol">
+
+<h2>{_'ERROR.WHY'}</h2>
+<ul>
+	<li>{!_'ERROR.404_WHY_1'}</li>
+	<li>{!_'ERROR.404_WHY_2'}</li>
+	<li>{!_'ERROR.404_WHY_3'|inject:CONTACT_LINK:$template->presenter->link('Default:contact')}</li>
+</ul>
+
+<h2>{_'ERROR.WHAT_NOW'}</h2>
+<p>{!_'ERROR.404_HOME'|inject:HOME_LINK:$template->presenter->link('Default:')}</p>
+
+</div>

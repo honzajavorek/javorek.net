@@ -1,0 +1,9 @@
+/**
+ * IE<=7 stylesheet.
+ *
+ * (c) Jan Javorek, 2009 (http://www.javorek.net)
+ */
+
+input.button, button {
+    _width: 0;
+}

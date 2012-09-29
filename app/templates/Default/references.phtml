@@ -1,0 +1,27 @@
+{block #content}
+
+<div class="header">
+<div class="wrapper">
+	<h1>{$header}</h1>
+	<p class="lead">{!_'REFERENCES.SUBTITLE'}</p>
+</div>
+</div>
+
+<hr>
+
+<div class="clothesline">
+<div class="section column mainleftcol">
+<h2>{_'REFERENCES.CLIENTS'}</h2>
+{widget clients}
+
+<h2>{_'REFERENCES.PROJECTS'}</h2>
+{widget projects}
+
+</div>
+
+<div class="section column siderightcol">
+<h2>{_'REFERENCES.TESTIMONIALS'}</h2>
+{widget testimonials}
+
+</div>
+</div>

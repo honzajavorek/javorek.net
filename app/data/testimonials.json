@@ -1,0 +1,50 @@
+{
+	"inizio":{
+		"title":"Jan Nedvěd, INIZIO",
+    	"quote":"S panem Javorkem a Wiglaszem INIZIO s.r.o. již dlouhodobě spolupracuje na vývoji internetových řešení. Díky spolehlivosti, flexibilitě a kvalitě výchozích řešení v další kooperaci doufáme i do budoucna.",
+    	"link":"http://www.inizio.cz/",
+    	"lang":"cs"
+    },
+    "noroip":{
+    	"title":"Miguel Taveras, Noro IP",
+    	"quote":"Michal, you rock!",
+    	"link":"http://www.noroip.com/",
+    	"lang":"en"
+    },
+    "noroip2":{
+    	"title":"Miguel Taveras, Noro IP",
+    	"quote":"It's always a pleasure to work with you. Thank you for your thorough responses.",
+    	"link":"http://www.noroip.com/",
+    	"lang":"en"
+    },
+    "h1":{
+    	"title":"Michal Krutiš, H1.cz",
+    	"quote":"S prací Honzy Javorka a Michala Wiglasze jsem byl vždy spokojen. Rychlá reakce, kvalitní práce a fajn přístup není to jediné co se mi na spolupráci libí. Oproti většině totiž také plní termíny, které slíbí.",
+    	"link":"http://www.h1.cz/",
+    	"lang":"cs"
+    },
+    "beny":{
+    	"title":"Ondřej Beneš",
+    	"quote":"Completely satisfied with the job Honza did.",
+    	"link":"http://www.linkedin.com/in/beny6",
+    	"lang":"en"
+    },
+    "friml":{
+    	"title":"Jan Friml, Friml.net",
+    	"quote":"Always reliable in keeping terms and by providing the top-quality work. I am very happy and proud to work with Honza and do not hesitate to hire him again.",
+    	"link":"http://www.friml.net/",
+    	"lang":"en"
+    },
+    "menseek":{
+    	"title":"Tomáš Menšík, MenSeek",
+    	"quote":"Honza is very flexible and creative person, he always fulfill our demands in time. We regard highly his advices and ideas.",
+    	"link":"http://www.menseek.eu/",
+    	"lang":"en"
+    },
+    "befirst":{
+        "title":"Lukáš Fabik, BEfirst",
+        "quote":"Se službami Michala Wiglasze jsem nadmíru spokojen. Práci vždy dokončí v domluveném termínu a odvede ji na 200 %.",
+        "link":"http://www.befirst.cz",
+        "lang":"cs"
+    }
+}

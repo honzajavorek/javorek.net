@@ -1,0 +1,806 @@
+/**
+ * Main stylesheet.
+ *
+ * (c) Jan Javorek, 2010 (http://www.javorek.net)
+ */
+
+/* layout ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+a:link, a:visited, a:hover, a:focus {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #6A4000;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+  background: #6A4000;
+  color: #FFF;
+}
+
+/* layouts and faux absolute positioning ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+html, body { color: #212321; font-family: Arial, Helvetica, sans-serif; }
+body { text-align: center; }
+#document { text-align: left; width: 900px; overflow: hidden; margin: 0 auto; }
+
+.clothesline {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	clear: both;
+}
+
+.clothesline .column {
+	position: relative;
+	float: left;
+	left: 100%;
+	overflow: hidden;
+}
+
+.firstcol { margin-left: -900px; width: 293px; }
+.secondcol { margin-left: -597px; width: 294px; }
+.thirdcol { margin-left: -293px; width: 293px; }
+
+.leftcol { margin-left: -900px; width: 445px; }
+.rightcol { margin-left: -445px; width: 445px; }
+
+.mainleftcol { margin-left: -900px; width: 597px; }
+.siderightcol { margin-left: -293px; width: 293px; }
+
+.sideleftcol { margin-left: -900px; width: 294px; }
+.mainrightcol { margin-left: -597px; width: 597px; }
+
+.singlecol { margin-left: 10%; margin-right: 10%; }
+
+/* header ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+#logo {
+	margin: 0;
+}
+
+#logo a {
+	display: block;
+	font-size: 150%;
+	width: 193px; height: 50px;
+	color: #212321;
+	position: relative;
+}
+
+#logo a:hover, #logo a:focus {
+  background: #212321;
+  color: #FFF;
+}
+
+/* menu ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+#menu {
+	position: absolute; right: 0; top: 0;
+}
+
+#menu li {
+	float: left;
+	width: 150px; height: 27px;
+	text-align: center;
+}
+
+#menu a {
+	display: block;
+	color: #FFF;
+	font-size: 95%;
+	line-height: 27px;
+	padding: 0 0.5em;
+
+	background: #6a4000;
+	border-right: #79531A 1px solid; border-left: #5F3900 1px solid;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+#menu .active a, #menu a:hover, #menu a:focus {
+	background: #553300;
+	color: #FFF;
+	border-right: #66481A 1px solid; border-left: #4C2E00 1px solid;
+}
+
+/* flashes ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.flashes {
+	position: absolute; left: 0; top: 85px; z-index: 8000;
+	text-align: center;
+	width: 100%;
+	color: #222;
+	font-weight: bold;
+}
+
+.flashes .flash {
+	display: inline;
+	padding: 0.5em 1em;
+	font-size: 100%;
+	background: #FFF799;
+}
+
+.flashes .error {
+  background: #F69679;
+}
+
+.flashes, .flashes a {
+  background: none;
+	color: #222;
+}
+
+.flashes a {
+  text-decoration: underline;
+}
+
+.flashes a:hover, .flashes a:focus {
+  background: none;
+	color: #222;
+	text-decoration: none;
+}
+
+.flashes small {
+	color: #222;
+}
+
+/* content ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+p, ul, ol, dl, table, blockquote {
+  font-size: 105%;
+  line-height: 2em;
+  margin-bottom: 1em;
+}
+
+.siderightcol p, .sidelefttcol p {
+  padding-left: 2em; padding-right: 2em;
+}
+
+.article {
+  min-height: 700px;
+}
+
+.article .header {
+	background: #97B600 url('../images/header.png') bottom no-repeat;
+	color: #FFF;
+	height: 183px;
+	overflow: hidden;
+	margin: -26px 0 26px 0;
+}
+
+.article .header .wrapper {
+  padding: 48px 340px 20px 20px;
+}
+
+.article .header p {
+  font-size: 1.5em;
+  line-height: 140%;
+	margin: 0;
+}
+
+.article h1 {
+	font-size: 2.6em;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 1.5em;
+	margin-bottom: 0.5em;
+	clear: both;
+}
+
+.article h1 a {
+	color: #ED1C24;
+}
+
+.article h1 a:hover, .article h1 a:focus {
+	background: #ED1C24;
+	color: #FFF;
+}
+
+.article h2 {
+  font-size: 2.6em;
+  line-height: 1.333em;
+  color: #222;
+  clear: both;
+}
+
+.article h2, .article div.line {
+  margin-bottom: 1em;
+}
+
+.article h3 {
+  font-size: 1.3em;
+  font-weight: bold;
+  line-height: 2em;
+  margin-bottom: 0.3em;
+  color: #222;
+  clear: both;
+}
+
+.article div.line {
+  background: url('../images/line.png') 0 2em repeat-x;
+  clear: both;
+  margin: 1em 0 2em 0;
+}
+
+.article div.line h2 {
+  display: inline;
+  position: relative; left: 0.3em;
+  padding: 0 0.3em;
+  background: #FFF;
+}
+
+ul li {
+  background: url('../images/bullet.png') 0.3em 0.3em no-repeat;
+}
+
+.go {
+  font-size: 120%;
+}
+
+.go strong {
+	color: #ED1C24;
+	vertical-align: super;
+}
+
+.go a:hover strong, .go a:focus strong {
+	color: #FFF;
+}
+
+.article img { margin: 1em; }
+.article img.float-left { float: left; margin-left: 0; }
+.article img.float-right { float: right; margin-right: 0; }
+
+.figure {
+	margin: 0; padding: 0;
+	text-align: center;
+}
+
+.figure img {
+	margin: 0.5em auto;
+	/*border: #D9D9D9 1px solid;*/
+}
+
+.figure table {
+	text-align: left;
+	width: 99%;
+}
+
+.figure th { border-bottom: #D9D9D9 1px solid; }
+.figure td { border-bottom: #D9D9D9 1px dotted; }
+
+small {
+	font-size: 80%;
+
+}
+
+small, .article small a {
+  color: #A8A8A8;
+}
+
+.article small a:hover, .article small a:focus {
+  background: #A8A8A8;
+  color: #FFF;
+}
+
+blockquote {
+	margin: 0 0 1em 0;
+	text-indent: 0;
+  border-left: 3px solid #D9D9D9;
+  padding-left: 1.5em;
+  font-style: italic;
+	color: #343434;
+}
+
+abbr, acronym {
+  font-variant: normal;
+  border-bottom: 1px dotted #000000;
+}
+
+abbr:hover, acronym:hover, small abbr, small acronym {
+	color: #2683FF;
+	border-color: #2683FF;
+}
+
+del { text-decoration: line-through; }
+ins { text-decoration: underline; }
+sub, sup { font-size: 80%; }
+
+dfn, em, cite, var {
+	font-style: italic;
+}
+
+pre {
+	margin: 2em 0; padding: 0.5em 1.5em;
+  overflow: auto;
+  background: #D9D9D9;
+}
+
+code, sample, kbd, tt {
+  margin: 0; padding: 0 0.2em;
+  background: #D9D9D9;
+	font-family: 'monospace font Firefox hack', Consolas, monospace;
+}
+
+pre code, pre sample {
+	padding: 0;
+}
+
+.price {
+  display: block;
+  width: 127px; height: 51px;
+  background: url('../images/price.png') no-repeat;
+  line-height: 51px;
+  text-indent: 0.3em;
+  font-size: 180%;
+  position: absolute; right: 0.1em; bottom: -0.6em; z-index: 300;
+}
+
+.price small {
+  font-size: 50%;
+  position: relative; left: -0.4em;
+  vertical-align: sub;
+}
+
+.price, .price small {
+  color: #FFF;
+}
+
+.price sup {
+  font-size: 40%;
+}
+
+.prices th {
+  vertical-align: middle;
+}
+
+.prices th {
+  width: 432px;
+  text-align: right;
+  padding-right: 1.5em;
+}
+
+.prices td.price {
+  position: static;
+  font-weight: bold;
+  margin: 0.3em;
+  text-indent: 0.6em;
+}
+
+a.more, a:hover.more, a:focus.more {
+  padding: 0.55em 0.75em;
+  background: #212321;
+  color: #FFF;
+  font-size: 90%;
+  line-height: 100%;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* stripe ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.article h1 img, .article h2 img, .article h3 img {
+	display: inline;
+	margin: 0;
+	vertical-align: middle;
+	margin-right: 0.5em;
+}
+
+/* forms ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+form {
+	padding: 1em 0;
+  color: #222;
+}
+
+fieldset {
+	margin-bottom: 1em; padding-left: 1.5em; padding-right: 1.5em; padding-bottom: 1em;
+	border: #D9D9D9 1px solid;
+}
+
+legend {
+  font-size: 1.5em;
+	line-height: 1.333em;
+	padding: 0 0.5em;
+}
+
+label {
+	margin-right: 0.5em;
+}
+
+form table {
+	width: 99%;
+}
+
+form th {
+	width: 20%;
+}
+
+input.button, button {
+  padding: 0 .25em;
+  overflow: visible;
+}
+
+textarea {
+	width: 99%;
+}
+
+/* homepage blocks ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+#blocks {
+  background: url('../images/bg-blocks.png');
+  margin-bottom: 2.5em;
+}
+
+#blocks p, #blocks li {
+  line-height: 1.5em;
+}
+
+#blocks li, .services li {
+  background: url('../images/bullet-checked.png') 5px center no-repeat;
+  padding: 0.4em 0 0.4em 35px;
+}
+
+#blocks .block .wrapper {
+  height: 200px;
+  padding: 0 15px;
+}
+
+#blocks h2 {
+  line-height: 40px;
+  vertical-align: baseline;
+  margin: 0; margin-bottom: 0.4em;
+  padding-top: 0.15em;
+}
+
+#blocks .thirdblock h2 {
+    font-size: 190%;
+}
+
+#blocks .block { width: 300px; float: left; position: relative; }
+#blocks .firstblock, #blocks .thirdblock { background: url('../images/border-blocks.png') center no-repeat; }
+#blocks .firstblock {  background-position: right; }
+#blocks .thirdblock { background-position: left; }
+
+/* languages ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+#languages {
+  position: absolute; left: 213px; top: 17px;
+}
+
+#languages li {
+  float: left;
+  margin-right: 10px;
+}
+
+#languages a, #languages a:hover, #languages a:focus {
+  display: block;
+  width: 22px; height: 16px;
+  overflow: hidden;
+  position: relative;
+}
+
+#languages a span {
+  display: block;
+  width: 22px; height: 16px;
+  position: absolute; left: 0; top: 0; z-index: 100;
+}
+
+#languages .lang-cs span { background: url('../images/lang-cs.png'); }
+#languages .lang-en span { background: url('../images/lang-en.png'); }
+
+/* twitter ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.tweet {
+  padding-left: 52px;
+  position: relative;
+  min-height: 60px;
+  line-height: 150%;
+  margin-bottom: 1em;
+}
+
+.published, .published:hover {
+  background: #97B600;
+  color: #FFF;
+  display: block;
+  border: none;
+  text-align: center;
+  position: absolute; left: 0; top: 0.3em;
+}
+
+.published .pub-day {
+  font-size: 195%;
+  line-height: 130%;
+}
+
+.published .pub-month {
+  font-size: 70%;
+  display: block;
+  background: #CACACA;
+  color: #3C3C3C;
+  line-height: 150%;
+  padding: 0 0.5em;
+}
+
+.twitter p {
+  text-align: right;
+  padding-right: 1em;
+}
+
+/* footer ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.footer {
+  height: 75px;
+  background: #212321;
+  font-size: 90%;
+  margin-top: 2em;
+}
+
+.footer a, .footer small {
+  font-size: 100%;
+}
+
+.footer, .footer a, .footer small {
+  color: #EBEBEB;
+}
+
+.footer p {
+  padding: 0; margin: 0;
+  line-height: 12px;
+}
+
+.footer a:hover, .footer a:focus {
+  color: #212321;
+  background: #EBEBEB;
+}
+
+#copyright {
+  padding: 22px 25px; padding-bottom: 0;
+  line-height: 150%;
+}
+
+#copyright .unimportant a {
+  font-weight: normal;
+}
+
+#follow {
+  position: absolute; right: 25px; bottom: 21px;
+}
+
+#follow li {
+  float: left;
+  padding: 0; margin: 0; margin-left: 10px;
+}
+
+#follow a, #follow span {
+  display: block;
+  overflow: hidden;
+  width: 30px; height: 30px;
+}
+
+#follow a {
+  position: relative;
+}
+
+#follow span {
+  position: absolute; left: 0; top: 0;
+}
+
+#follow .rss span { background: url('../images/ico-rss.png'); }
+#follow .twitter span { background: url('../images/ico-twitter.png'); }
+#follow .facebook span { background: url('../images/ico-facebook.png'); }
+#follow .linkedin span { background: url('../images/ico-linkedin.png'); }
+
+/* logo grid ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.logogrid ul, ul.logogrid, .logogrid li {
+  margin: 0; padding: 0;
+  list-style-type: none;
+  list-style-image: none;
+  background: none;
+}
+
+.logogrid {
+  margin: 2em 0 1em 0;
+}
+
+.logogrid img, .logogrid li {
+  display: inline;
+  padding: 0; margin: 0;
+}
+
+.logogrid li {
+  margin: 0 1.5em 0 0;
+  line-height: 40px;
+}
+
+/* listtable ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.listtable th, .listtable td {
+  vertical-align: middle;
+}
+
+.listtable th {
+  text-align: center;
+  padding-right: 1em;
+}
+
+.listtable img {
+  margin: 1.5em 0.5em;
+  background: none;
+  display: block;
+}
+
+.listtable a img {
+  background: none;
+}
+
+.browsers th {
+  width: 30%;
+  text-align: center;
+}
+
+.browsers img {
+  margin: 1em auto;
+}
+
+.projects .tech em, .who em, .projects .client {
+  padding: 0.2em 0.4em;
+  background: #2683FF;
+  color: #FFF;
+  font-size: 90%;
+  line-height: 100%;
+  font-style: normal;
+}
+
+.projects .client {
+  background: #CACACA;
+  color: #3C3C3C;
+}
+
+.conferences img {
+  margin: 0.5em;
+}
+
+.conferences th {
+  padding-right: 0;
+  width: 35%;
+}
+
+/* testimonials ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.testimonials {
+  padding: 0.5em 2em;
+}
+
+blockquote {
+  padding: 0;
+  text-indent: 35px;
+  background: url('../images/bq.png') left top no-repeat;
+  border: none;
+}
+
+.testimonials img.flag {
+  display: inline;
+  padding: 0; margin: 0; margin-right: 0.5em;
+  vertical-align: middle;
+}
+
+.testimonials h3 a, .testimonials h3 a:hover, .testimonials h3 a:focus {
+  color: inherit;
+  background: inherit;
+}
+
+/* contacts ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.contacts #blocks .block { width: 298px; float: left; position: relative; }
+.contacts #blocks .firstblock { background: url('../images/border-blocks.png') center no-repeat; }
+.contacts #blocks .firstblock {  background-position: right; }
+
+.contacts .more {
+  float: right;
+}
+
+.contacts table th {
+  width: 40%;
+}
+
+.contact table th, .contact table td {
+  padding: 0.3em;
+}
+
+.contact .wrapper {
+  padding: 1.5em;
+}
+
+.businesscard {
+  position: relative;
+  background: #EEE;
+  padding: 1em; padding-bottom: 0; margin: 1em;
+}
+
+.businesscard .photo {
+  display: block;
+  margin: 0; padding: 0;
+  position: absolute; left: 1em; top: 0;
+}
+
+.businesscard table {
+  width: 350px;
+  margin-left: auto; margin-bottom: 2em;
+}
+
+.businesscard a {
+  color: #222;
+}
+
+.businesscard a:hover, .businesscard a:focus {
+  color: #FFF;
+  background: #222;
+}
+
+.businesscard .status {
+  display: inline;
+  margin: 0;
+  vertical-align: middle;
+}
+
+.contacts .linkedin th {
+  width: 100px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.contacts .linkedin img {
+  display: block;
+  margin: 0.5em auto;
+}
+
+/* tabs ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+ul#tabs, #tabs ul, #tabs li {
+  padding: 0; margin: 0;
+  list-style-type: none;
+  list-style-image: none;
+  background: none;
+}
+
+ul#tabs, #tabs ul {
+  margin-bottom: 2em;
+  border-bottom: 1px solid #97B600;
+  overflow: hidden;
+}
+
+#tabs li {
+  display: inline;
+}
+
+#tabs a, #tabs a:hover, #tabs a:focus {
+  padding: 0.55em 0.75em;
+  background: #D2D2D2;
+  color: #FFF;
+  font-size: 90%;
+  line-height: 100%;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+#tabs .active a {
+  background: #97B600;
+}
+
+/* map ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+#map-legend {
+  margin: 1em 0 2em 0;
+}
+
+#map-legend th {
+  width: 22%;
+  padding-left: 1.5em;
+}
+
+#map-canvas {
+  width: 100%;
+  height: 300px;
+}
+
+

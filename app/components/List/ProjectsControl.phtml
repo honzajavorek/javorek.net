@@ -1,0 +1,13 @@
+<table class="projects listtable">
+{foreach $items as $item}
+	<tr>
+		<th><img src="{$basePath}/images/contracts/{$item['filename']}" alt="{$item['title']}" title="{$item['title']}"></th>
+		<td>
+			<span class="tech">{foreach $item['tech'] as $tech}<em>{$tech}</em> {/foreach}</span>
+			<span class="client">{_'LAYOUT.SUBCONTRACT_FOR'}: {$item['client']}</span>
+			<br>
+			{$item['desc']}
+		</td>
+	</tr>
+{/foreach}
+</table>
