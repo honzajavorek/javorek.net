@@ -2,7 +2,7 @@
 
 Source code of portfilio site of my former business. Result can be seen on [javorek.net](http://www.javorek.net).
 
-Couple of years ago, I formed a small web development team with [Michal Wiglasz](https://github.com/kacer) and some external designers. It used **javorek.net** or just **Javorek** as it's brand name and we used [javorek.net](http://www.javorek.net) as our portfolio site. As this business activity doesn't exist any more, the site only serves as a tombstone now (heavily inspired by [beze-slova.cz](http://www.beze-slova.cz/)).
+Couple of years ago, I formed a small web development team with [Michal Wiglasz](https://github.com/kacer) and some external designers. It used **javorek.net** or just **Javorek** as it's brand name and we used [javorek.net](http://www.javorek.net) as our portfolio site. As this business activity doesn't exist any more, the site only serves as a tombstone now.
 
 ## Status: ACTIVE
 
