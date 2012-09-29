@@ -122,10 +122,20 @@ dd p {
     margin: 0 0.2em;
 }
 
+.person a {
+    color: #666;
+    background-color: transparent;
+}
+
 .person .contact {
     display: block;
     margin: 1em 0;
     font-size: 1.3em;
+}
+
+.person .contact a {
+    color: #222;
+    background-color: #fbfca1;
 }
 
 .references {
@@ -149,9 +159,18 @@ dd p {
         width: 100%;
     }
 
+    .person {
+        width: auto;
+        float: none;
+        margin-left: auto; margin-right: auto;
+    }
+
     .michal {
         border: none;
-        width: 350px;
+    }
+
+    .michal small {
+        display: none;
     }
 
     dl {
