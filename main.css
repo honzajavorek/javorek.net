@@ -21,6 +21,12 @@ h1 {
     margin-bottom: 1.3em;
 }
 
+h1 small {
+    display: block;
+    font-size: 65%;
+    margin-top: 0.5em;
+}
+
 p {
     width: 90%;
     margin: auto;
