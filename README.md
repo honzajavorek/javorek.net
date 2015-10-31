@@ -4,10 +4,6 @@ Source code of portfilio site of my former business. Result can be seen on [javo
 
 Couple of years ago, I formed a small web development team with [Michal Wiglasz](https://github.com/kacer) and some external designers. It used **javorek.net** or just **Javorek** as it's brand name and we used [javorek.net](http://www.javorek.net) as our portfolio site. As this business activity doesn't exist any more, the site only serves as a tombstone now.
 
-## Status: ACTIVE
-
-Under active development and maintenance.
-
 ## License: CC BY-NC-SA
 
 (cc) 2007–2012 Jan Javorek &lt;<a
